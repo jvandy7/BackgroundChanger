@@ -2,9 +2,11 @@
 
 Swap Background based on background provider, uses NASA's astronomy picture of the day currently. 
 https://github.com/nasa/apod-api
+API key can be gotten from https://api.nasa.gov/
 
 Makes use of 
 https://github.com/microsoft/CsWin32
+
 
 ## Setup
 - Use .net 5.0
