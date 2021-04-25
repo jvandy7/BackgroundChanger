@@ -1,0 +1,7 @@
+launch.json
+tasks.json
+*apiKey.txt
+background/*
+bin/*
+obj/*
+!background/background.jpg
