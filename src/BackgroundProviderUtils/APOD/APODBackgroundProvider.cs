@@ -2,12 +2,13 @@ using System.IO;
 using System.Net.Http.Json;
 using System.Text;
 using System.Threading.Tasks;
+using System.Reflection;
 
 namespace BackgroundProviderUtils
 {
     public class APODBackgroundProvider : HttpBackgroundProvider
     {
-        static readonly string background = @"background\background.jpg";
+        static readonly string background = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + @"\background\background.jpg";
         static readonly string api = "https://api.nasa.gov/planetary/apod";
         static readonly string imageType = "image";
 

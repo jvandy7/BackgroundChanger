@@ -1,4 +1,5 @@
 using System.IO;
+using System.Reflection;
 namespace BackgroundProviderUtils
 {
     public static class APODApiKey
@@ -7,7 +8,7 @@ namespace BackgroundProviderUtils
         private static string getKey()
         {
             //TODO catch exceptions
-            StreamReader sr = new StreamReader(@"APODApiKey.txt");
+            StreamReader sr = new StreamReader(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + @"\APODApiKey.txt");
             return sr.ReadLine();
         }
     }
